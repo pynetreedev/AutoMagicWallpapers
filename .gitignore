@@ -1,0 +1,9 @@
+# Eclipse / ADT build output
+bin/
+gen/
+
+# Local SDK paths - machine specific
+local.properties
+
+# Eclipse workspace cruft
+.metadata/
