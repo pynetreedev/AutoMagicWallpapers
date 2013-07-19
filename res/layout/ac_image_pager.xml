@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="10"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    android:background="#000000"
+    android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"  >
+<android.support.v4.view.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+<TextView
+    android:id="@+id/txtimageTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Image Title:"
+    android:layout_marginBottom="5dip"
+    android:padding="1dip"
+    android:textColor="#FFFFFF"  />
+<TextView
+    android:id="@+id/txtimageName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/txtimageTitle"
+    android:layout_marginBottom="5dip"
+    android:text="Image"
+    android:padding="1dip"
+    android:textColor="#FFFFFF" 
+ />
+<!-- <TextView
+    android:id="@+id/txtimageInfoYearLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Year:"
+    android:layout_below="@id/txtimageTitle"
+    android:padding="1dip"
+    android:textColor="#FFFFFF"  />
+<TextView
+    android:id="@+id/txtimageInfoYear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtimageTitle"
+    android:layout_toRightOf="@id/txtimageInfoYearLabel"
+    android:padding="1dip"
+    android:textColor="#FFFFFF" 
+    android:text="1950"
+    android:onClick="ShowInfo"
+    android:clickable="true" />
+<TextView
+    android:id="@+id/txtimageInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Image Info:"
+    android:layout_below="@id/txtimageInfoYearLabel"
+    android:padding="1dip"
+    android:textColor="#FFFFFF"  />
+<TextView
+    android:id="@+id/txtimageInfoLink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtimageInfoYearLabel"
+    android:layout_toRightOf="@id/txtimageInfo"
+    android:padding="1dip"
+    android:textColor="#FFFFFF" 
+    android:text="google.com"
+    android:onClick="ShowInfo"
+    android:clickable="true"/> -->
+ 
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+<com.millennialmedia.android.MMAdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        mm:width="320"
+        mm:height="50"
+        mm:apid="129058" />
+</RelativeLayout>
+</LinearLayout>

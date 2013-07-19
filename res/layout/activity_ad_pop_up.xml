@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    tools:context=".AdPopUp" >
+    
+<com.millennialmedia.android.MMAdView
+        android:id="@+id/adView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        mm:width="300"
+        mm:height="250"
+        mm:apid="128760" />
+        <Button
+        	android:id="@+id/CloseAd"
+        	android:layout_below="@+id/AdfonicAd"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:onClick="CloseAdClick"
+        	android:text="Close">
+            
+        </Button>
+</RelativeLayout>

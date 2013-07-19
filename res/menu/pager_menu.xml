@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+    android:id="@+id/item_setWallpaper"
+    android:title="@string/set_wallpaper"
+    android:icon="@drawable/pushpin"
+    android:showAsAction="always"/>
+    <item
+    android:id="@+id/item_download"
+    android:title="@string/download_wallpaper"
+    android:showAsAction="always"
+    android:icon="@drawable/download"/>    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        android:icon="@drawable/action_settings"/>
+
+</menu>
