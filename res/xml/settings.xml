@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     <PreferenceCategory
+     android:key="automagicSettings"
+     android:title="AutoMagic Settings"
+     ></PreferenceCategory>
+    <ListPreference
+        android:dependency="wallpaperFrequency"
+        android:key="wallpaperFrequency"
+        android:title="@string/pref_wallpaper_frequency"
+        android:dialogTitle="@string/pref_wallpaper_frequency"
+        android:entries="@array/wallpaperFrequency"
+        android:entryValues="@array/wallpaperFrequencyValues"
+        android:defaultValue="@string/pref_wallpaper_frequency_Default"/>
+    <Preference
+        android:key="renameCourses"
+        android:title="Magic Folders"
+        android:summary="Select Folders to be Included in the Magic!">
+        <intent
+             android:action="android.intent.action.VIEW"
+             android:targetPackage="net.xenopro.automagicwallpapers"
+             android:targetClass="net.xenopro.automagicwallpapers.FolderPicker" />         
+    </Preference>
+    <ListPreference
+        android:dependency="imageOrderSort"
+        android:key="imageOrderSort"
+        android:title="@string/pref_rotating_Images_Sort"
+        android:dialogTitle="@string/pref_rotating_Images_Sort"
+        android:entries="@array/imageOrder"
+        android:entryValues="@array/imageOrderValues"
+        android:defaultValue="@string/pref_rotating_Images_Sort_Default"/>
+    <Preference
+        android:key="randomizeFiles"
+        android:title="Sort Rotating Images">
+        </Preference>
+        <PreferenceCategory
+            android:key="generalSettings"
+            android:title="General Settings"
+            ></PreferenceCategory>
+   <CheckBoxPreference
+        android:key="toastMessages"
+        android:title="Show Popup Messages"
+        android:summary="On AutoMagic Wallpaper Changes"
+        android:enabled="true"
+        android:defaultValue="true"
+        android:selectable="true"></CheckBoxPreference>
+    <Preference
+        android:key="clearDiscCache"
+        android:title="Clear Disc Cache">
+        </Preference>
+   <PreferenceCategory
+            android:key="aboutSettings"
+            android:title="About"
+            ></PreferenceCategory>
+    <Preference
+        android:key="aboutUs"
+        android:title="@string/title_about">
+        </Preference>
+    <Preference
+        android:key="contactUs"
+        android:title="@string/title_contactUs">
+        </Preference>
+</PreferenceScreen>
