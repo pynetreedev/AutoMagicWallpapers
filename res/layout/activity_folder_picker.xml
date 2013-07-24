@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FolderPicker" >
+
+    <TextView
+        android:id="@+id/FolderPickerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Folders Below" />
+   <ListView
+        android:id="@+id/FolderlistView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/FolderPickerLabel"
+        android:scrollbars="vertical">
+    </ListView>
+	<Button 
+	    android:id="@+id/btnSaveFolders"
+	    android:text="Save"
+	    android:layout_below="@id/FolderlistView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:onClick="SaveFolderClick"
+	    
+	    />
+	<Button 
+	    android:id="@+id/btnFoldersCancel"
+	    android:text="Cancel"
+	    android:layout_below="@id/btnSaveFolders"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:onClick="CancelClick"
+	    />
+</RelativeLayout>
