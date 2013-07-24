@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wallpaperFrequency">
+        <item name="30Sec">30 Seconds</item>
+        <item name="1Min">1 Minute</item>
+        <item name="5Min">5 Minutes</item>
+        <item name="10Min">10 Minutes</item>
+        <item name="15Min">15 Minutes</item>
+        <item name="30Min">30 Minutes</item>
+        <item name="1Hr">1 Hour</item>
+        <item name="2Hr">2 Hours</item>
+        <item name="5Hr">5 Hours</item>
+        <item name="10Hr">10 Hours</item>
+        <item name="24Hr">24 Hours</item>
+    </string-array>
+    <string-array name="wallpaperFrequencyValues">
+        <item name="30">30</item>
+        <item name="60">60</item>
+        <item name="300">300</item>
+        <item name="600">600</item>
+        <item name="900">900</item>
+        <item name="1800">1800</item>
+        <item name="3600">3600</item>
+        <item name="7200">7200</item>
+        <item name="18000">18000</item>
+       	<item name="36000">36000</item>
+        <item name="86400">86400</item>
+    </string-array>
+    <string-array name="imageOrder">
+        <item name="alpha">Alphabetical</item>
+        <item name="random">Random</item>
+        <item name="nosort">No Sorting</item>
+    </string-array>
+    <string-array name="imageOrderValues">
+        <item name="alpha">alpha</item>
+        <item name="random">random</item>
+        <item name="nosort">nosort</item>
+    </string-array>
+</resources>
