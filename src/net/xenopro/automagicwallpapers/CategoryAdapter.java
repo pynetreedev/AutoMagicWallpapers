@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import net.xenopro.automagicwallpapers.R;
+import net.xenopro.automagicwallpaperspro.R;
 
 public class CategoryAdapter extends ArrayAdapter<Category>{
 

@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import net.xenopro.automagicwallpapers.Constants.Extra;
-import net.xenopro.automagicwallpapers.R;
+import net.xenopro.automagicwallpaperspro.R;
 import android.app.ProgressDialog;
 import android.app.WallpaperManager;
 import android.content.Context;
@@ -39,8 +39,6 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.millennialmedia.android.MMAdView;
-import com.millennialmedia.android.MMRequest;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
@@ -83,7 +81,6 @@ public class ImagePager extends BaseActivity {
 		StrictMode.setThreadPolicy(policy);
 		setTheme(R.style.Theme_Sherlock);
 	    setContentView(R.layout.ac_image_pager);
-	    getAd();
 	    networkConnection = haveNetworkConnection();
 	    context = this;
 	    

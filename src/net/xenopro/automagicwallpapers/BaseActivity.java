@@ -26,7 +26,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
-import net.xenopro.automagicwallpapers.R;
+import net.xenopro.automagicwallpaperspro.R;
 
 public class BaseActivity extends SherlockActivity {
 
@@ -42,16 +42,6 @@ public class BaseActivity extends SherlockActivity {
 	public static Context homecontext;
 	public static boolean networkConnection;
 	public static TextView lblConnection;
-	//Constants for tablet sized ads (728x90)
-	public static final int IAB_LEADERBOARD_WIDTH = 728;
-	public static final int IAB_LEADERBOARD_HEIGHT = 90;
-
-	public static final int MED_BANNER_WIDTH = 480;
-	public static final int MED_BANNER_HEIGHT = 60;
-
-	//Constants for phone sized ads (320x50)
-	public static final int BANNER_AD_WIDTH = 320;
-	public static final int BANNER_AD_HEIGHT = 50;
 	
 	
 	public void startImageGridActivity(String category) 
@@ -137,47 +127,4 @@ public class BaseActivity extends SherlockActivity {
         return (xlarge);
     }
     
-    public boolean canFit(int adWidth) 
-    {
-        int adWidthPx = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, adWidth, getResources().getDisplayMetrics());
-        DisplayMetrics metrics = getResources().getDisplayMetrics();
-        return metrics.widthPixels >= adWidthPx;
-    }
-    
-    public void getAd()
-    {
-		MMAdView adViewFromXml = (MMAdView) findViewById(R.id.adView);
-
-		//MMRequest object
-		MMRequest request = new MMRequest();
-
-		adViewFromXml.setMMRequest(request);
-		int placementWidth = BANNER_AD_WIDTH;
-		int placementHeight = BANNER_AD_HEIGHT;
-
-		//Finds an ad that best fits a users device.
-		if(canFit(IAB_LEADERBOARD_WIDTH)) {
-		    placementWidth = IAB_LEADERBOARD_WIDTH;
-		    placementHeight = IAB_LEADERBOARD_HEIGHT;
-		} else if(canFit(MED_BANNER_WIDTH)) {
-		    placementWidth = MED_BANNER_WIDTH;
-		    placementHeight = MED_BANNER_HEIGHT;
-		}
-		adViewFromXml.setWidth(placementWidth);
-		adViewFromXml.setHeight(placementHeight);
-		int layoutWidth = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, placementWidth, getResources().getDisplayMetrics());
-		int layoutHeight = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, placementHeight, getResources().getDisplayMetrics());
-
-		//Create the layout parameters using the calculated adView width and height.
-		RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(layoutWidth, layoutHeight);
-
-		//This positions the banner.
-		layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-		layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-
-		adViewFromXml.setLayoutParams(layoutParams);
-
-		adViewFromXml.getAd();
-    }
-	
 }

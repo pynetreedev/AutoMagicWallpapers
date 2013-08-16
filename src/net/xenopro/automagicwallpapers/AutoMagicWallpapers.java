@@ -16,7 +16,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
-public class AutoMagicWallpapersFree extends Application {
+public class AutoMagicWallpapers extends Application {
 
 	@SuppressWarnings("unused")
     @Override

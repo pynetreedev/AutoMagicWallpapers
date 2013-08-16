@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AutoMagic Wallpapers Free</string>
+    <string name="app_name">AutoMagic Wallpapers</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_settings">Settings</string>
     <string name="descr_image">Image</string>

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import net.xenopro.automagicwallpapers.R;
+import net.xenopro.automagicwallpaperspro.R;
 
 public class WikiInfo extends Activity {
 	

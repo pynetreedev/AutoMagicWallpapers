@@ -5,7 +5,7 @@ import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
-import net.xenopro.automagicwallpapers.R;
+import net.xenopro.automagicwallpaperspro.R;
 
 import android.app.Activity;
 import android.content.SharedPreferences;

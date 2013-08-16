@@ -9,7 +9,7 @@
         <RelativeLayout
             android:layout_width="fill_parent"
     android:layout_height="0dp"
-    android:layout_weight="8"  >
+    android:layout_weight="9"  >
 <android.support.v4.view.ViewPager
     android:id="@+id/pager"
     android:layout_width="wrap_content"
@@ -77,19 +77,5 @@
     android:onClick="ShowInfo"
     android:clickable="true"/> -->
  
-</RelativeLayout>
-<RelativeLayout
-    android:layout_width="fill_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1" >
-<com.millennialmedia.android.MMAdView
-        android:id="@+id/adView"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        mm:width="320"
-        mm:height="50"
-        mm:apid="129058" />
 </RelativeLayout>
 </LinearLayout>

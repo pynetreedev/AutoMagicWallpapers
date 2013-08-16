@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.xenopro.automagicwallpaperspro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include next permission if you want to allow UIL to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="net.xenopro.automagicwallpapers.AutoMagicWallpapers"
+        android:allowBackup="true"
+        android:label="@string/app_name" android:icon="@drawable/ic_launcher"
+        android:theme="@style/Theme.Sherlock">
+        <activity
+            android:name="net.xenopro.automagicwallpapers.GridHomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+              <action android:name="android.intent.action.SET_WALLPAPER" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="net.xenopro.automagicwallpapers.HomeActivity" >
+        </activity>
+        <activity
+            android:name="net.xenopro.automagicwallpapers.ImageListActivity"
+            android:excludeFromRecents="true"
+            android:label="Art" >
+        </activity>
+        <activity
+            android:name="net.xenopro.automagicwallpapers.ImagePager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.xenopro.automagicwallpapers.SplashActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="net.xenopro.automagicwallpapers.WikiInfo"
+            android:label="@string/title_activity_wiki_info"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <service android:name="net.xenopro.automagicwallpapers.WallpaperChangerService"
+            android:process=":AutomagicWallpapersService" >
+        </service>
+
+       <receiver android:name="net.xenopro.automagicwallpapers.WallpaperChangerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.xenopro.automagicwallpapers.FolderPicker"
+            android:label="@string/title_activity_folder_picker">
+        </activity>
+        <activity
+            android:name="net.xenopro.automagicwallpapers.About"
+            android:label="@string/title_about">
+        </activity>
+        <activity
+            android:name="net.xenopro.automagicwallpapers.SettingsActivity"
+            android:label="@string/action_settings" >
+        </activity>
+    </application>
+
+</manifest>
