@@ -37,4 +37,27 @@ The TapForTap publisher key has been replaced with
 `YOUR_TAPFORTAP_API_KEY` in `AndroidManifest.xml`, `GridHomeActivity` and
 `ImageListActivity`.
 
-Bundled wallpapers are public-domain artwork and Pixabay images.
+## License
+
+The **source code** here is MIT licensed - see [LICENSE](LICENSE).
+
+The **bundled images are not covered by that license.** XenoPro held
+permission to use them inside the app only, so they are not relicensed:
+
+| Image | Status |
+| --- | --- |
+| `*_pixabay_icon.jpg`, `Aurora Pixabay.jpg`, `Horseshoe Bend Pixabay.jpg` | Pixabay, per that site's terms |
+| `the_sleeping_gypsy_1897`, `st_michael_1504`, `bombardment_of_algiers_1820`, `landers_peak_1863` | Public-domain artwork |
+
+## Removed assets
+
+Three third-party photographs were licensed to XenoPro for in-app use only
+and are **not** included in this repository:
+
+- `assets/Images/Foggy Forest.jpg`
+- `assets/Images/Glacier Lake G.jpg`
+- `res/drawable-hdpi/pyramid_icon.jpg`
+
+The 2013 sources are otherwise unmodified, so `ImageListActivity` still
+references `R.drawable.pyramid_icon` for the "Buildings" category. Supply
+your own drawable of that name, or drop the category, before building.
