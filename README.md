@@ -1,9 +1,15 @@
-# AutoMagic Wallpapers (Free)
+# AutoMagic Wallpapers
 
 An Android wallpaper app that rotates your home screen background on a
 schedule, either from bundled art or from a folder you pick on the device.
 
 Package: `net.xenopro.automagicwallpapers` — version 1.2 (versionCode 4).
+
+## Branches
+
+- **`main`** — the ad-supported build, carried furthest (Sept 2013, SDK bump May 2014).
+- **`pro`** — the paid build, forked 2013-08-16. Same app with TapForTap and
+  Millennial ad code stripped out, package `net.xenopro.automagicwallpaperspro`.
 
 ## Features
 
